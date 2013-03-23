@@ -29,7 +29,9 @@
 import numpy as np
 
 # project library
-import grmReader  
+import grmReader
+
+import mpi4py as mpi
 
 def simulate():
     ''' Simulate data generation process of the Generalized Roy Model.

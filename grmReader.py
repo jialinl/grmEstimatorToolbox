@@ -52,7 +52,6 @@ def _write(initDict):
     ''' Write dictionary that results from the processing of the *.ini
         file.
     '''
-        
     #  Write out the *.json file.
     with open('grmInit.json', 'w') as file_:
         

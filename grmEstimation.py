@@ -108,12 +108,13 @@ def estimate():
     sys.stdout = sys.__stdout__
     
     # Construct dictionary with results.
-    rslt = _distributeEvaluationValues(rslt, numCovarsOut, True)
+    rslt = _distributeEvaluationValues(rslt[0], numCovarsOut, True)
+    return rslt
+    #print rslt
     
     #  Write out the *.json file.
-    with open('grmRslt.json', 'w') as file_:
-        
-        json.dump(initDict, file_)
+    #with open('grmRslt.json', 'w') as file_:
+    #json.dump(rslt, file_)
     
 ''' Private Functions.
 '''
